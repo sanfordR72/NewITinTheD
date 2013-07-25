@@ -1,0 +1,98 @@
+﻿@model ITintheDWebsite.Models.Application
+
+@{
+    ViewBag.Title = "Apply";
+}
+
+<h2>Apply</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Application</legend>
+
+        <div class="editor-label">
+            <b>Email Address</b>
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Email)
+            @Html.ValidationMessageFor(model => model.Email)
+        </div>
+
+        <div class="editor-label">
+            <b>First Name</b>
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.FirstName)
+            @Html.ValidationMessageFor(model => model.FirstName)
+        </div>
+
+        <div class="editor-label">
+            <b>Last Name</b>
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.LastName)
+            @Html.ValidationMessageFor(model => model.LastName)
+        </div>
+
+        <div class="editor-label">
+            <b>How'd you hear about us?</b>
+        </div>
+        <div class="editor-field">
+            @*Html.EditorFor(model => model.HowYouHeard)*@
+            @Html.DropDownList("HowYouHeard")
+            @Html.ValidationMessageFor(model => model.HowYouHeard)
+        </div>
+
+        <div class="editor-label">
+            <b>What role are you interested in?</b>
+        </div>
+        <div class="editor-field">
+            @*Html.EditorFor(model => model.Role)*@
+            <div id="roleRow">
+                Business Analyst @Html.RadioButtonFor(model => model.Role, "Business Analyst")
+                Project Manager @Html.RadioButtonFor(model => model.Role, "Project Manager")
+                Engineer @Html.RadioButtonFor(model => model.Role, "Engineer")
+                User Interface @Html.RadioButtonFor(model => model.Role, "User Interface")
+                @Html.ValidationMessageFor(model => model.Role)
+            </div>
+        </div>
+
+        <div class="editor-label">
+            <b>Question 1</b>
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Question1)
+            @Html.ValidationMessageFor(model => model.Question1)
+        </div>
+
+        <div class="editor-label">
+            <b>Question 2</b>
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Question2)
+            @Html.ValidationMessageFor(model => model.Question2)
+        </div>
+
+        <div class="editor-label">
+            <b>Question 3</b>
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Question3)
+            @Html.ValidationMessageFor(model => model.Question3)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
