@@ -182,7 +182,8 @@
       <DependentUpon>Applications.mdf</DependentUpon>
     </Content>
     <Content Include="Content\Images\10Weeks.png" />
-    <Content Include="Content\Images\Backgrounds\Composite6-4th-copyExperiment-2c.jpg" />
+    <Content Include="Content\Images\Backgrounds\landing_background.jpg" />
+    <Content Include="Content\Images\Backgrounds\mentor-mentee4.jpg" />
     <Content Include="Content\Images\campus_martius.jpg" />
     <Content Include="Content\Images\ChaseBuildingA.jpg" />
     <Content Include="Content\Images\ChaseBuildingB.jpg" />

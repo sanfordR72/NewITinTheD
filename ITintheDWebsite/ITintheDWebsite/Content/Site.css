@@ -823,7 +823,7 @@ div {
 /*------------landing page---------------*/
 
 #landingBackground {
-    background-image: url(Images/campus_martius.jpg);
+    background-image: url(Images/Backgrounds/landing_background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 100px;
@@ -856,7 +856,7 @@ div {
 /*-------------------what you learn classes n id's--------------------*/
 
 #learningBackground {
-    background-image: url(Images/classroom.jpeg);
+    background-image: url(Images/Backgrounds/mentor-mentee4.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: auto;
@@ -1065,5 +1065,23 @@ img.mentor {
 .sponsorDiv a {
     padding: 0;
     margin: 0;
+}
+
+/*-----------itwhat page-----------*/
+
+.itIsBox {
+    float: left;
+    width: 25%;
+    font-size: 25px;
+    text-align: center;
+}
+
+.itIsBox p {
+    margin-top: 50px;
+}
+
+.itIsBox ul{
+    font-size: 16px;
+    margin: 10px;
 }
 
