@@ -41,6 +41,11 @@ namespace ITintheDWebsite.Controllers
             return View();
         }
 
+        public ActionResult Faq()
+        {
+            return View();
+        }
+
         public ActionResult Apply()
         {
             List<SelectListItem> howYouHeard = new List<SelectListItem>();

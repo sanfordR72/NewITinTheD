@@ -182,6 +182,7 @@
       <DependentUpon>Applications.mdf</DependentUpon>
     </Content>
     <Content Include="Content\Images\10Weeks.png" />
+    <Content Include="Content\Images\Backgrounds\Composite6-4th-copyExperiment-2c.jpg" />
     <Content Include="Content\Images\campus_martius.jpg" />
     <Content Include="Content\Images\ChaseBuildingA.jpg" />
     <Content Include="Content\Images\ChaseBuildingB.jpg" />
@@ -259,6 +260,16 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
+    <Content Include="Images\Mentors\dhuston.jpg" />
+    <Content Include="Images\Mentors\FriesenBrian.jpg" />
+    <Content Include="Images\Mentors\WalkerSonya.png" />
+    <Content Include="Images\Sponsors\compuwarelogosmall.png" />
+    <Content Include="Images\Sponsors\fathead2.png" />
+    <Content Include="Images\Sponsors\galaxe2.gif" />
+    <Content Include="Images\Sponsors\mrktg_assoc_logo2.jpg" />
+    <Content Include="Images\Sponsors\quicken_logo2.jpg" />
+    <Content Include="Images\Sponsors\TitleSource.jpg" />
+    <Content Include="Scripts\mentorModal.js" />
     <Content Include="Scripts\jquery-1.7.1.js" />
     <Content Include="Scripts\jquery-1.7.1.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -319,6 +330,7 @@
     <Content Include="Views\Home\Why.cshtml" />
     <Content Include="Views\Home\Apply.cshtml" />
     <Content Include="Views\Home\ThankYou.cshtml" />
+    <Content Include="Views\Home\Faq.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
