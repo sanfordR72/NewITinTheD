@@ -2,90 +2,84 @@
     ViewBag.Title = "Faq";
 }
 
+<h1>General FAQ </h1>
 
-    <div class="wrapper">
-        <div class="hero"></div>
-        <div class="contactInfo"> 
-            <div class="contactInfoInner">
-            <span class="fontawesome-remove-sign"></span>
-            <img />
-                <h1>This is the mentor information.</h1> 
-            <p>This is where your databash get code will go. We'll need to have a look inside you with this camera. No, I'm Santa Claus! Quite possible. We live long and are celebrated poopers. You'll have all the Slurm you can drink when you're partying with Slurms McKenzie</p>
-            <div class="clear"></div>
-            </div>
-        </div>
-         <h1>Project Management</h1>
+<h3>What is IT in the D and what is it trying to accomplish?</h3>
+<p>IT in the D is a training program, created by several downtown Detroit-based companies,
+     in an effort to bridge the gap between what the schools are
+     teaching at local colleges and universities and current hiring needs.</p>
 
-        <img class="mentor" />
-        <img class="mentor" />
-        <img class="mentor" />
-        <img class="mentor" />
-         <h1>Business Analysts</h1>
+<h3>Who are the partnering companies?</h3>
+<p>Currently, the partnering companies are Compuware, Fathead, 
+    GalaxE.Solutions, Marketing, Associates, Title Source, and Quicken Loans.</p>
 
-        <img class="mentor" />
-        <img class="mentor" />
-        <img class="mentor" />
-        <img class="mentor" />
-         <h1>User Interface</h1>
+<h3>Is IT in the D non-profit?</h3>
+<p>IT in the D is currently funded solely by the partnering companies.</p>
 
-        <img class="mentor" />
-        <img class="mentor" />
-        <img class="mentor" />
-        <img class="mentor" />
-        
-<h1>Software Engineers</h1>
+<h3>Does it cost anything to be a part of IT in the D?</h3>
+<p>No. IT in the D is completely free to those involved.</p>
 
-        <img class="mentor" />
-        <img class="mentor" />
-        <img class="mentor" />
-        <img class="mentor" />
-    </div>
+<h3>Who are the students?</h3>
+<p>IT in the D has a very diverse student population. They range from young adults in their last year of 
+    college to established professionals looking to refine or expand their technical skills.</p>
 
-<script src="~/Scripts/jquery-1.7.1.min.js"></script>
-<script type="text/javascript" >
+<h3>Where does IT in the D meet?</h3>
+<p>It in the D meets in downtown Detroit, in buildings surrounding Campus Martius.</p>
 
+<h3>Is IT in the D an internship program?</h3>
+<p>No, IT in the D is not an internship program. Students will receive valuable training related to their 
+    particular IT path of interest, which mimics real-world application and implementation</p>
 
+<h1>Prospective Students</h1>
 
+<h3>How do I get involved?</h3>
+<p>IT in the D has a substantial academic partner list. Please refer to the 
+    list and contact your school’s faculty member or administrator for details
+     on how to get involved. If your school is not one of the schools listed, 
+    please have a school representative contact ITintheD@ITinDetroit.com.</p>
 
+<h3>How long is an IT in the D session?</h3>
+<p>An IT in the D session runs 10 weeks.</p>
 
-    $(function () {
-        var contact = $('.mentor'),
-            popup = $('.contactInfo'),
-            mask = $('.mask'),
-            close = $('.contactInfo span');
+<h3>Does IT in the D provide college credit?</h3>
+<p>Currently, IT in the D has not established college credit 
+    with its academic partners; however, this is something that we are working on.</p>
 
-        contact.click(function () {
-            $('<div class="mask" />').prependTo('body');
-            mask.css({ 'width': $('html').outerWidth(), 'height': $('html').height() });
-            centerPopUp(popup, mask);
-            popup.slideDown(200);
-        });
-        close.click(function () {
-            popup.slideUp(200);
-            $('.mask').remove();
-        });
+<h3>What is the time commitment for students?</h3>
+<p>Students are required to commit two hours, twice a week for ten weeks; however, a lot of students are so 
+    committed to their work that they have taken it upon themselves to meet after hours.</p>
 
-        function centerPopUp(pop, m) {
-            var winH = $(window).height(),
-                winW = $(window).outerWidth(),
-                popH = $(pop).height(),
-                popW = $(pop).width();
+<h3>What do students get from participating in IT in the D?</h3>
+<p>Students who complete the program will receive a certificate of completion
+     signed by the executives of each participating company. Students will also get resume and interview training, 
+    as well as contacts within the partnering companies and our partner WIN, to assist with job placement.</p>
 
-            //Set the popup window to center
-            if (screen.height > 640) {
-                $(pop).css('top', Math.max((winH - popH), 0) / 2);
-                $(pop).css('left', Math.max((winW - popW), 0) / 2);
-            } else {
-                return false;
-            }
+<h3>Will IT in the D guarantee me a job?</h3>
+<p>While IT in the D does its best to prepare its students for the “real world”, it does not guarantee employment. 
+    That being said, many IT in the D students have shown the 
+    skills, commitment and aptitude to receive employment offers from the partnering companies.  </p>
 
-            //Stretch FilterMask to Full Size
-            $(m).width(winW + 20);
-            $(m).height(winH);
-        }
+<h1>Current Students FAQ</h1>
 
-        $(window).resize(centerPopUp(popup, mask));
+<h3>How can I contact my mentors and other IT in the D personnel?</h3>
+<p>The Operations Team will provide you with a document at the start of the session 
+    with all contact information.  If you do not have this document, please inform IT in the D. </p>
 
-    });
-</script>
+<h3>Where do I park?</h3>
+<p>Please park at the Compuware parking structure, entering the parking deck from Farmer Street. Access to the office
+     tower is at ground level, directly across Farmer Street. Parking is validated for all students.</p>
 
+<h3>Where can I go to get help with my resume?</h3>
+<p>Please contact ITintheD@ITinDetroit.com and they will direct you to the most appropriate resource.</p>
+
+<h3>What happens when I complete the IT in the D program?</h3>
+<p>Our commitment to our students does not stop at the door. Once you have graduated, please feel free to reach 
+    out to trainers and administration on LinkedIn. Most importantly, IT in the D will put you in direct contact with its 
+    partnering organization, WIN, to assist you with any questions relating to resumes, interviewing or job hunting.</p>
+
+<h1>Contact us at:</h1>
+<p>ITintheD@ITinDetroit.com <br />
+    Compuware Building <br />
+    One Campus Martius <br />
+    Detroit, MI 48226
+</p>
