@@ -4,12 +4,25 @@
         mask = $('.mask'),
         close = $('.contactInfo span');
 
-    contact.click(function () {
+    contact.click(function (event) {
         //$('<div class="mask" />').prependTo('body');
-        mask.css({ 'width': $('html').outerWidth(), 'height': $('html').height() });
+        //mask.css({ 'width': $('html').outerWidth(), 'height': $('html').height() });
         centerPopUp(popup, mask);
         popup.slideDown(200);
+
+        var picPath = $(this).attr("src");
+        $("#mentorPic").attr("src", picPath);
+
+        var name = $(this).data("mentor-name");
+        url = "/Mentor/GetMentorInfo?name=" + name;
+        document.getElementById("mentorName").innerHTML = name;
+
+        $.post(url, function (data) {
+            document.getElementById("mentorInfo").innerHTML = data;
+        });
+    
     });
+
     close.click(function () {
         popup.slideUp(200);
         $('.mask').remove();

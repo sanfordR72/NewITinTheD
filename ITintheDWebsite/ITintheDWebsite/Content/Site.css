@@ -1085,3 +1085,16 @@ img.mentor {
     margin: 10px;
 }
 
+/*------------mentor box--------------*/
+
+.mentorBox {
+    float: right;
+    background: #efeeef;
+    height: 145px;
+    width: 25%;
+    margin-right: 20px;
+
+}
+.mentorBox p {
+    text-wrap: normal;
+}
