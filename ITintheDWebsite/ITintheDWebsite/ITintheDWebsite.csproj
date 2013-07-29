@@ -163,6 +163,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MentorController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -171,15 +172,25 @@
     <Compile Include="Migrations\201307230250007_Initial.Designer.cs">
       <DependentUpon>201307230250007_Initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201307291942308_AddDBEntities.cs" />
+    <Compile Include="Migrations\201307291942308_AddDBEntities.Designer.cs">
+      <DependentUpon>201307291942308_AddDBEntities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201307291945459_addMentor.cs" />
+    <Compile Include="Migrations\201307291945459_addMentor.Designer.cs">
+      <DependentUpon>201307291945459_addMentor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\Application.cs" />
+    <Compile Include="Models\DBEntities.cs" />
+    <Compile Include="Models\Mentor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\Applications.mdf" />
-    <Content Include="App_Data\Applications_log.ldf">
-      <DependentUpon>Applications.mdf</DependentUpon>
+    <Content Include="App_Data\DBEntities.mdf" />
+    <Content Include="App_Data\DBEntities_log.ldf">
+      <DependentUpon>DBEntities.mdf</DependentUpon>
     </Content>
     <Content Include="Content\Images\10Weeks.png" />
     <Content Include="Content\Images\Backgrounds\landing_background.jpg" />
@@ -333,13 +344,21 @@
     <Content Include="Views\Home\ThankYou.cshtml" />
     <Content Include="Views\Home\Faq.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Views\Mentor\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201307230250007_Initial.resx">
       <DependentUpon>201307230250007_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201307291942308_AddDBEntities.resx">
+      <DependentUpon>201307291942308_AddDBEntities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201307291945459_addMentor.resx">
+      <DependentUpon>201307291945459_addMentor.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
