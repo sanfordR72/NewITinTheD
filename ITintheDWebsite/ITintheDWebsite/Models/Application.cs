@@ -45,8 +45,5 @@ namespace ITintheDWebsite.Models
         public string Question3 { get; set; }
     }
 
-    public class ApplicationDBContext : DbContext
-    {
-        public DbSet<Application> Apps { get; set; }
-    }
+    
 }

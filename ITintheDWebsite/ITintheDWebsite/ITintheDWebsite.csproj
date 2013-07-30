@@ -163,6 +163,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MentorController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -171,17 +172,29 @@
     <Compile Include="Migrations\201307230250007_Initial.Designer.cs">
       <DependentUpon>201307230250007_Initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201307291942308_AddDBEntities.cs" />
+    <Compile Include="Migrations\201307291942308_AddDBEntities.Designer.cs">
+      <DependentUpon>201307291942308_AddDBEntities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201307291945459_addMentor.cs" />
+    <Compile Include="Migrations\201307291945459_addMentor.Designer.cs">
+      <DependentUpon>201307291945459_addMentor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\Application.cs" />
+    <Compile Include="Models\DBEntities.cs" />
+    <Compile Include="Models\Mentor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\Applications.mdf" />
-    <Content Include="App_Data\Applications_log.ldf">
-      <DependentUpon>Applications.mdf</DependentUpon>
+    <Content Include="App_Data\DBEntities.mdf" />
+    <Content Include="App_Data\DBEntities_log.ldf">
+      <DependentUpon>DBEntities.mdf</DependentUpon>
     </Content>
     <Content Include="Content\Images\10Weeks.png" />
+    <Content Include="Content\Images\Backgrounds\landing_background.jpg" />
+    <Content Include="Content\Images\Backgrounds\mentor-mentee4.jpg" />
     <Content Include="Content\Images\campus_martius.jpg" />
     <Content Include="Content\Images\ChaseBuildingA.jpg" />
     <Content Include="Content\Images\ChaseBuildingB.jpg" />
@@ -259,6 +272,16 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
+    <Content Include="Images\Mentors\dhuston.jpg" />
+    <Content Include="Images\Mentors\FriesenBrian.jpg" />
+    <Content Include="Images\Mentors\WalkerSonya.png" />
+    <Content Include="Images\Sponsors\compuwarelogosmall.png" />
+    <Content Include="Images\Sponsors\fathead2.png" />
+    <Content Include="Images\Sponsors\galaxe2.gif" />
+    <Content Include="Images\Sponsors\mrktg_assoc_logo2.jpg" />
+    <Content Include="Images\Sponsors\quicken_logo2.jpg" />
+    <Content Include="Images\Sponsors\TitleSource.jpg" />
+    <Content Include="Scripts\mentorModal.js" />
     <Content Include="Scripts\jquery-1.7.1.js" />
     <Content Include="Scripts\jquery-1.7.1.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -319,14 +342,23 @@
     <Content Include="Views\Home\Why.cshtml" />
     <Content Include="Views\Home\Apply.cshtml" />
     <Content Include="Views\Home\ThankYou.cshtml" />
+    <Content Include="Views\Home\Faq.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Views\Mentor\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201307230250007_Initial.resx">
       <DependentUpon>201307230250007_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201307291942308_AddDBEntities.resx">
+      <DependentUpon>201307291942308_AddDBEntities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201307291945459_addMentor.resx">
+      <DependentUpon>201307291945459_addMentor.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

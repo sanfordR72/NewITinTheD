@@ -9,7 +9,7 @@ namespace ITintheDWebsite.Controllers
 {
     public class HomeController : Controller
     {
-        private ApplicationDBContext db = new ApplicationDBContext();
+        private DBEntities db = new DBEntities();
 
         public ActionResult Index()
         {
@@ -37,6 +37,11 @@ namespace ITintheDWebsite.Controllers
         }
 
         public ActionResult Why()
+        {
+            return View();
+        }
+
+        public ActionResult Faq()
         {
             return View();
         }
