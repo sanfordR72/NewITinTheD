@@ -835,7 +835,7 @@ div {
     background-image: url(Images/campus_martius.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 100px;
+    padding: 250px;
     margin: 0;
 }
 
@@ -856,6 +856,8 @@ div {
 
 .whatIsContent {
     float: right;
+    font-weight: bold;
+    font-size: 18px;
     width: 60%;
     word-wrap: normal;
 }
