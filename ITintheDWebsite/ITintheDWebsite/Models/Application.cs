@@ -43,6 +43,11 @@ namespace ITintheDWebsite.Models
         [StringLength(200)]
         [DataType(DataType.MultilineText)]
         public string Question3 { get; set; }
+
+        [Required]
+        public HttpPostedFileBase Resume { get; set; }
+
+        public HttpPostedFileBase Transcript { get; set; }
     }
 
     
