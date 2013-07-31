@@ -3,7 +3,7 @@
 @{
     ViewBag.Title = "Apply";
 }
-
+<div class="apply">
 <h2>Apply</h2>
 
 @using (Html.BeginForm("Apply", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
@@ -107,3 +107,5 @@
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
 }
+
+    </div>
