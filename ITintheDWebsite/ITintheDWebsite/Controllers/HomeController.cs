@@ -61,19 +61,23 @@ namespace ITintheDWebsite.Controllers
         [HttpPost]
         public ActionResult Apply(Application a)
         {
-            if (ModelState.IsValid)
+            /*if (ModelState.IsValid)
             {
                 db.Apps.Add(a);
                 db.SaveChanges();
                 return RedirectToAction("ThankYou");
-            }
+            }*/
 
-            return View();
+
+
+            return RedirectToAction("Index");
         }
 
         public ActionResult ThankYou()
         {
             return View();
         }
+
+
     }
 }
