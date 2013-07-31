@@ -38,6 +38,10 @@ namespace ITintheDWebsite
                         "~/Content/themes/base/jquery.ui.datepicker.css",
                         "~/Content/themes/base/jquery.ui.progressbar.css",
                         "~/Content/themes/base/jquery.ui.theme.css"));
+
+            //bundles.Add(new StyleBundle("~/Content/themes/maximum/css").Include(
+                        //""
+                        //));
         }
     }
 }
