@@ -815,6 +815,18 @@ div {
     width: 60%;
     word-wrap: normal;
 }
+.infoBox3Content {
+    float: none;
+    width: 60%;
+    word-wrap: normal;
+}
+.infoBox3Header {
+    font-size: 50px;
+    float: left;
+    width: 20%;
+    height: 100px;
+    color: white;
+}
 
 
 /*------------landing page---------------*/
@@ -928,21 +940,21 @@ div {
 #live {
     background-image: url(Images/live.png);
     background-repeat: no-repeat;
-    background-size: 40%;
+    background-size: 28%;
     background-position: right;
 }
 
 #work {
     background-image: url(Images/work.png);
     background-repeat: no-repeat;
-    background-size: 40%;
+    background-size: 20%;
     background-position: right;
 }
 
 #play {
     background-image: url(Images/play.png);
     background-repeat: no-repeat;
-    background-size: 40%;
+    background-size: 21%;
     background-position: right;
 }
 
