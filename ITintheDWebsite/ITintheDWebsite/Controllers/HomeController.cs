@@ -85,8 +85,11 @@ namespace ITintheDWebsite.Controllers
             mail.Body = ComposeMessageBody(a);
 
             //Attach files
-            var res = new Attachment(a.Resume.InputStream, a.Resume.FileName);
-            mail.Attachments.Add(res);
+            if (a.Resume != null)
+            {
+                var res = new Attachment(a.Resume.InputStream, a.Resume.FileName);
+                mail.Attachments.Add(res);
+            }
             if (a.Transcript != null)
             {
                 var tran = new Attachment(a.Transcript.InputStream, a.Transcript.FileName);

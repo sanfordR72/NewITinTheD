@@ -9,6 +9,7 @@ namespace ITintheDWebsite.Models
 {
     public class Mentor
     {
+        [Key]
         public int ID { get; set; }
 
         [Required]
