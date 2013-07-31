@@ -853,7 +853,7 @@ div {
 /*-------------------what you learn classes n id's--------------------*/
 
 #learningBackground {
-    background-image: url(Images/classroom.jpeg);
+    background-image: url(Images/experiential_learning_photo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: auto;
@@ -891,27 +891,19 @@ div {
     font-weight: bold;
     font-size: 30px;
     position: relative;
-    top: 100px;
-    left: 100px;
+    top: 25px;
+    left: 400px;
 }
-.jumplinkAcademic {
-    background-color: none;
-    font-color: White;
-    font-weight: bold;
-    font-size: 30px;
-    position: relative;
-    top: 200px;
-    left: 100px;
    
-}
+
 .jumplinkMentor {
     background-color: none;
     font-color: White;
     font-weight: bold;
     font-size: 30px;
     position: relative;
-    top: 0px;
-    left: 800px;
+    top: 25px;
+    left: 100px;
   
 }
 .jumplinkAlumni {
@@ -920,8 +912,8 @@ div {
     font-weight: bold;
     font-size: 30px;
     position: relative;
-    top: 125px;
-    left: 800px;
+    top: 0px;
+    left: 775px;
 }
 /*-----------------whyDetroit page-----------------*/
 

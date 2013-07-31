@@ -20,6 +20,8 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -189,6 +191,8 @@
     <Content Include="Content\Images\Compuware.jpg" />
     <Content Include="Content\Images\CompuwareLogo.jpg" />
     <Content Include="Content\Images\downtown_detroit.jpg" />
+    <Content Include="Content\Images\experiential_learning_photo.jpg" />
+    <Content Include="Content\Images\Fall 2012 Session.jpg" />
     <Content Include="Content\Images\fathead.jpg" />
     <Content Include="Content\Images\GalaxEsolutions.jpg" />
     <Content Include="Content\Images\GoogleMap.png" />
@@ -200,6 +204,7 @@
     <Content Include="Content\Images\play.png" />
     <Content Include="Content\Images\QuickenLoans.JPG" />
     <Content Include="Content\Images\SpaceSaver.png" />
+    <Content Include="Content\Images\Summer 2013 Session.jpg" />
     <Content Include="Content\Images\TitleSource.jpg" />
     <Content Include="Content\Images\work.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
@@ -357,6 +362,7 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
+  <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
