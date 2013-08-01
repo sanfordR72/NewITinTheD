@@ -857,7 +857,7 @@ div {
 .whatIsContent {
     float: right;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 13px;
     width: 60%;
     word-wrap: normal;
 }
@@ -885,6 +885,7 @@ div {
 }
 
 /*Rachel's Additions */
+
 #whatBackground {
     background-image: url(Images/ChaseBuildingB.jpg);
     background-repeat: no-repeat;
