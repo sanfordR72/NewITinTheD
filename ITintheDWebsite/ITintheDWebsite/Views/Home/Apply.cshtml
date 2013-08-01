@@ -3,10 +3,11 @@
 @{
     ViewBag.Title = "Apply";
 }
-
+<div class="apply">
 <h2>Apply</h2>
 
-@using (Html.BeginForm()) {
+@using (Html.BeginForm("Apply", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
     @Html.ValidationSummary(true)
 
     <fieldset>
@@ -60,7 +61,7 @@
         </div>
 
         <div class="editor-label">
-            <b>Question 1</b>
+            <b>Why are you applying to IT in the D?</b>
         </div>
         <div class="editor-field">
             @Html.EditorFor(model => model.Question1)
@@ -83,8 +84,18 @@
             @Html.ValidationMessageFor(model => model.Question3)
         </div>
 
+        <div>
+            <label for="resume">Upload Resume</label>
+            <input type="file" name="resume" id="resume" />
+        </div>
+
+        <div>
+            <label for="transcript">Upload Transcript (optional)</label>
+            <input type="file" name="transcript" id="transcript" />
+        </div>
+
         <p>
-            <input type="submit" value="Create" />
+            <input type="submit" value="Submit Application" />
         </p>
     </fieldset>
 }
@@ -96,3 +107,5 @@
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
 }
+
+    </div>

@@ -6,14 +6,35 @@ namespace ITintheDWebsite.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<ITintheDWebsite.Models.ApplicationDBContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<ITintheDWebsite.Models.DBEntities>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(ITintheDWebsite.Models.ApplicationDBContext context)
+        /*protected override void Seed(ITintheDWebsite.Models.MentorDBContext context)
+        {
+            context.Mentors.AddOrUpdate(m => m.Name,
+            new Mentor
+            {
+                Name = "Dashaun Houston",
+                Info = "adsajkfhg ksjadfh gkajshf gkajsf gdakjshf gakjshdf gskajhdf gksjdgf askjhdf gsakjdh gaskd"
+            },
+            new Mentor
+            {
+                Name = "Brian Friesen",
+                Info = "dskafjhgask fhsadjfgskadhg fkajsdhg fkjhd fgskajhg fkjsah fgaskjfhd gaskjhfg askdjfhgsd akjfh gsakdjfhg "
+            },
+            new Mentor
+            {
+                Name = "Sonya Walker",
+                Info = "slkdafh kjsahfdgskadjfh gkadjh gfakdjhf gaskjdfhg "
+            }
+            );
+        }*/
+
+        protected override void Seed(ITintheDWebsite.Models.DBEntities context)
         {
             //  This method will be called after migrating to the latest version.
 
@@ -27,6 +48,23 @@ namespace ITintheDWebsite.Migrations
             //      new Person { FullName = "Rowan Miller" }
             //    );
             //
+
+            context.Mentors.AddOrUpdate(m => m.Name,
+            new Mentor
+            {
+                Name = "Dashaun Houston",
+                Info = "adsajkfhg ksjadfh gkajshf gkajsf gdakjshf gakjshdf gskajhdf gksjdgf askjhdf gsakjdh gaskd"
+            },
+            new Mentor
+            {
+                Name = "Brian Friesen",
+                Info = "dskafjhgask fhsadjfgskadhg fkajsdhg fkjhd fgskajhg fkjsah fgaskjfhd gaskjhfg askdjfhgsd akjfh gsakdjfhg "
+            },
+            new Mentor
+            {
+                Name = "Sonya Walker",
+                Info = "slkdafh kjsahfdgskadjfh gkadjh gfakdjhf gaskjdfhg "
+            });
 
             context.Apps.AddOrUpdate(a => a.Email,
                 new Application
@@ -63,6 +101,8 @@ namespace ITintheDWebsite.Migrations
                     Question3 = "gvsdiufnysvdkvnygdsfinuykdsvnygfnus"
                 }
                 );
+
+
         }
     }
 }
