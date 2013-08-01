@@ -5,9 +5,10 @@
         close = $('.contactInfo span');
 
     contact.click(function (event) {
-        //$('<div class="mask" />').prependTo('body');
-        //mask.css({ 'width': $('html').outerWidth(), 'height': $('html').height() });
+
+        mask.css({ 'width': $('html').outerWidth(), 'height': $(window).height() });
         centerPopUp(popup, mask);
+        mask.fadeIn(200);
         popup.slideDown(200);
 
         var picPath = $(this).attr("src");
@@ -15,17 +16,17 @@
 
         var name = $(this).data("mentor-name");
         url = "/Mentor/GetMentorInfo?name=" + name;
-        document.getElementById("mentorName").innerHTML = name;
+        $("#mentorName").html(name);
 
         $.post(url, function (data) {
-            document.getElementById("mentorInfo").innerHTML = data;
+        $("#mentorInfo").html(data);
         });
     
     });
 
-    close.click(function () {
+    close.add(mask).click(function () {
         popup.slideUp(200);
-        $('.mask').remove();
+        $('.mask').fadeOut(200);
     });
 
     function centerPopUp(pop, m) {

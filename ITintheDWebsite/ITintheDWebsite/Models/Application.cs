@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity;
 using System.Linq;
 using System.Web;
@@ -43,6 +44,13 @@ namespace ITintheDWebsite.Models
         [StringLength(200)]
         [DataType(DataType.MultilineText)]
         public string Question3 { get; set; }
+
+        [NotMapped]
+        [Required]
+        public HttpPostedFileBase Resume { get; set; }
+
+        [NotMapped]
+        public HttpPostedFileBase Transcript { get; set; }
     }
 
     
