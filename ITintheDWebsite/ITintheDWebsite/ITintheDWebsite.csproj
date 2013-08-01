@@ -195,6 +195,7 @@
       <DependentUpon>DBEntities.mdf</DependentUpon>
     </Content>
     <Content Include="Content\Images\10Weeks.png" />
+    <Content Include="Content\Images\GainKnowledge.jpg" />
     <Content Include="Content\Images\congrats-4.jpg" />
     <Content Include="Content\Images\ITD-StudentsComputerClass-9.jpg" />
     <Content Include="Content\Images\Backgrounds\landing_background.jpg" />
@@ -600,6 +601,7 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
+    <Content Include="Images\Alumni\it-in-the-d-2.jpg" />
     <Content Include="Images\Mentors\dhuston.jpg" />
     <Content Include="Images\Mentors\FriesenBrian.jpg" />
     <Content Include="Images\Mentors\WalkerSonya.png" />
