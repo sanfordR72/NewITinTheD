@@ -9,7 +9,7 @@ html {
 
 body {
     background-color: #fff;
-    border-top: solid 10px #000;
+    /*border-top: solid 10px #000;*/ 
     color: #333;
     font-size: .85em;
     font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
@@ -37,6 +37,11 @@ a {
 header, footer, hgroup,
 nav, section {
     display: block;
+}
+
+header {
+    height: 45px;
+    background-image: linear-gradient(to bottom, #333333, black);
 }
 
 mark {
