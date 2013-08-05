@@ -869,9 +869,11 @@ tr.pager td {
 /*------------------what you gain page---------------------*/
 
 #gainBackground {
-    background-image: url(Images/GainKnowledge.jpg);
+    background-image: url(Images/handsbrains.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 500px;
+    background-position:center;
+    background-color:black;
     width: auto;
     height: 500px;
 }
