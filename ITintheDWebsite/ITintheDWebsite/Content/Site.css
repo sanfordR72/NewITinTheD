@@ -921,9 +921,11 @@ tr.pager td {
     height: 500px;
 }
 .whoBackground {
-    background-image: url(Images/Compuware.jpg);
+    background-image: url(Images/campusMartius.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 800px;
+    background-position:center;
+    background-color:black;
     width: auto;
     height: 500px;
     overflow: hidden;
